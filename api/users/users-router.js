@@ -82,7 +82,7 @@ router.post(
 
 router.use((err, req, res, next) => {
   res.status(err.status || 500).json({
-    message: "something tragic inside posts route happened",
+    message: "user not found",
     errMessage: err.message,
     stack: err.stack,
   });
